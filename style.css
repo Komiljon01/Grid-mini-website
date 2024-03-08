@@ -41,6 +41,7 @@ ol {
 
 a {
   color: inherit;
+  line-height: 26px;
 }
 
 h1,
@@ -73,9 +74,10 @@ p[class*="__text"] {
   font-family: "Open Sans", sans-serif;
   line-height: 2.6rem;
   font-size: 1.4rem;
+  color: var(--text-grey);
 }
 
-.trend-btn {
+.trend {
   font-family: "Open Sans", sans-serif;
   display: inline-block;
   padding-right: 1rem;
@@ -102,4 +104,324 @@ p[class*="__text"] {
 
 .text-center {
   text-align: center;
+}
+
+/* Layout (section) */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+/* Phone */
+.phone {
+  grid-column: 1 / 3;
+  justify-content: space-evenly;
+  padding: 0 4%;
+}
+
+.phone__content {
+  width: 32%;
+}
+
+.phone__title {
+  margin: 1rem 0 2rem;
+}
+
+.phone__img {
+  max-width: 24.9rem;
+  margin-top: 4rem;
+}
+
+/* Lab */
+.lab {
+  grid-column: 3 / 5;
+  background-color: var(--gray);
+  flex-direction: column;
+}
+
+.lab__title {
+  max-width: 55rem;
+  margin: 2rem 0 1rem;
+}
+
+.lab__link {
+  color: var(--text-blue);
+  font-size: 1.4rem;
+}
+
+/* Keyboard */
+.keyboard {
+  grid-column: 1 / 2;
+  background-color: var(--danger);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.keyboard__img {
+  max-width: 100%;
+  width: 25.8rem;
+}
+
+.keyboard__title {
+  max-width: 23rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.keyboard__link {
+  color: var(--text-yellow);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+}
+
+/* Retina */
+.retina {
+  grid-column: 2 / 4;
+  padding: 6.8rem 4% 0;
+  justify-content: space-around;
+}
+
+.retina__left-content {
+  max-width: 18rem;
+  width: 50%;
+}
+
+.retina__right-content {
+  width: 40%;
+}
+
+.retina__img {
+  width: 15rem;
+}
+
+.retina__title {
+  margin: 1rem 0 3rem;
+}
+
+.retina__text {
+  margin-bottom: 2rem;
+}
+
+.retina__link {
+  color: var(--text-blue);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+}
+
+/* Icloud */
+
+.icloud {
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+  background-color: var(--light-purple);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5% 7rem;
+  overflow: hidden;
+}
+
+.icloud__img-wrapper {
+  width: 37.3rem;
+  height: 37.3rem;
+  border-radius: 50%;
+  background-color: var(--dark-purple);
+  flex-direction: column;
+}
+
+.icloud .popular {
+  padding: 0.2rem 1.3rem;
+  background-color: #ffffff14;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  border-radius: 6rem;
+  gap: 6px;
+}
+
+.icloud .popular img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.icloud__img {
+  max-width: 100%;
+  width: 23.9rem;
+  margin-top: 2rem;
+}
+
+.icloud .popular-text {
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.icloud .icloud__title {
+  color: var(--white);
+  margin-top: 2rem;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+}
+
+.icloud .icloud__text {
+  color: var(--white);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 80%;
+  max-width: 29rem;
+}
+
+.learn__more {
+  padding: 1.4rem 2.8rem;
+  border-radius: 5rem;
+  background-color: var(--text-yellow);
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+/* Game */
+.game {
+  flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: var(--gray);
+}
+
+.game__img {
+  max-width: 100%;
+  width: 18rem;
+}
+
+.game__title {
+  margin: 1rem 0 3rem;
+  width: 54%;
+}
+
+.game__link {
+  color: var(--text-blue);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+}
+
+/* Experience */
+.experience {
+  position: relative;
+  grid-column: 2 / 4;
+  padding-top: 3rem;
+  background-color: var(--light-green);
+  overflow: hidden;
+}
+
+.best__choice {
+  background-color: var(--danger);
+  margin-left: 3rem;
+  text-transform: uppercase;
+}
+
+.experience__title {
+  max-width: 28rem;
+  margin: 3.1rem auto 4rem;
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.experience__img1 {
+  position: relative;
+  bottom: 0;
+  max-width: 50rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+
+.experience__img2 {
+  position: absolute;
+  bottom: 0;
+  max-width: 60rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9;
+}
+
+/* Twitter */
+.twitter {
+  background-color: var(--light-blue);
+  overflow: hidden;
+}
+
+.twitter__content-wrapper {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  flex-direction: column;
+}
+
+.twitter__img {
+  width: 4.3rem;
+}
+
+.twitter__title {
+  margin: 1rem 0 2rem;
+  max-width: 18rem;
+  text-align: center;
+  color: var(--white);
+}
+
+/* BetterExperience */
+.betterExperience {
+  flex-direction: column;
+}
+
+.popularTrend {
+  background-color: var(--dark-green);
+}
+
+.betterExperience__title {
+  width: 70%;
+  margin: 1rem 0 2rem;
+}
+
+/* Display */
+.display {
+  padding: 0 5%;
+  grid-column: 3 / 5;
+  background-color: var(--dark);
+  column-gap: 5rem;
+}
+
+.display__img {
+  max-width: 18rem;
+}
+
+.display__title {
+  color: var(--white);
+  width: 34%;
 }
